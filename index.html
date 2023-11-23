@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RevoU Mini Software Engineering Class</title>
+    <link rel="stylesheet" href="cs/style.css">
+  </head>
+
+  <body>
+    <header class="header-wrapper">
+      <img class="logo" alt="travel" src="/assets/travel.jpg" />
+      <div class="menu">
+        <button><a href="#home">Home</a></button>
+        <button><a href="#package">Our Package</a></button>
+        <button><a href="#action">Call Action</a></button>
+      </div>
+    </header>
+
+    <h1 class="center">Your Trusted Travel Agent's</h1>
+    <p class="center">Your Happiness Is Our Happiness</p>
+
+    <main class="main-content">
+        
+      <div id="home">
+          <img
+          class="img-slideshow"
+          src="https://source.unsplash.com/random/1080x400?landscape&sig=1"
+        />
+        <img
+          class="img-slideshow"
+          src="https://source.unsplash.com/random/1080x400?landscape&sig=2"
+        />
+        <img
+          class="img-slideshow"
+          src="https://source.unsplash.com/random/1080x400?landscape&sig=3"
+        />
+
+        <div class="testimony">
+          <h2>"ini merupakan travel agent favorit saya"</h2>
+          <div class="testimony-account">
+            <img src="assets/profil.jpg" class="profile-img" />
+            <div class="account-profile">
+              <h3>Raihan</h3>
+              <p>Mahasiswa, 19</p>
+            </div>
+          </div>
+        </div>
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Nesciunt voluptate expedita fuga eligendi neque fugiat officia illo voluptatum ut sapiente aspernatur tempora, 
+        officiis rem placeat ducimus quasi quae et? Dolorum aspernatur id similique? Nobis eveniet reiciendis optio tenetur porro esse
+        mollitia officiis iusto totam quam, ducimus quos ratione quaerat repellat!
+        <ul class="circular-list">
+          <li class="circular-list-item">
+            <span class="circular-list-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quas sapiente quibusdam.</span>
+          </li>
+          <li class="circular-list-item">
+            <span class="circular-list-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit obcaecati quaerat?</span>
+          </li>
+          <li class="circular-list-item">
+            <span class="circular-list-item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In nisi numquam rem?</span>
+          </li>
+        </ul>
+      </div>
+
+      
+      <section>
+        <div class="form-section">
+          <div class="form-container">
+              <h2>Contact Us</h2>
+              <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+              <form name="message-form" onsubmit="return validateForm()">
+                <h3>Your Name : 
+                  <br><input type="text" placeholder="First and last name" name="full-name" row/></h3>      
+                <br>
+                <h3>Email Address : 
+                  <br>
+                  <input type="text" name="email" placeholder="example@email.com"/></h3>
+                <br>
+                <label for="Destination"><h3>What Are You Interested In?</h3></label> 
+                <select name="Destination" id="Destination">
+                  <option value="jakarta">Jakarta</option>
+                  <option value="bandung">Bandung</option>
+                  <option value="malang">Malang</option>
+                  <option value="bali">Bali</option>
+                </select>
+                <br>
+                <button type="submit" class="primary-button">Send</button>
+              </form>
+            </div>
+        </div>
+      </section>
+    </main>
+    <section class="our-package" id="package">
+      <section class="package-header">
+        <h1>OUR PACKAGE</h1>
+      </section>
+      <section class="location-list">
+        <div class="location">
+          <div class="location-detail">
+            <p>Sumatra Barat</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolorum, quis consequatur! Aliquam aut, velit excepturi quas
+              debitis optio libero rerum?
+            </p>
+          </div>
+        </div>
+        <div class="location">
+          <div class="location-detail">
+            <p>Bali</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolorum, quis consequatur! Aliquam aut, velit excepturi quas
+              debitis optio libero rerum?
+            </p>
+          </div>
+        </div>
+        <div class="location">
+          <div class="location-detail">
+            <p>Bandung</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolorum, quis consequatur! Aliquam aut, velit excepturi quas
+              debitis optio libero rerum?
+            </p>
+          </div>
+        </div>
+        <div class="location">
+          <div class="location-detail">
+            <p>Jakarta</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolorum, quis consequatur! Aliquam aut, velit excepturi quas
+              debitis optio libero rerum?
+            </p>
+          </div>
+        </div>
+        <div class="location">
+          <div class="location-detail">
+            <p>Jambi</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolorum, quis consequatur! Aliquam aut, velit excepturi quas
+              debitis optio libero rerum?
+            </p>
+          </div>
+        </div>
+        <div class="location">
+          <div class="location-detail">
+            <p>Aceh</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolorum, quis consequatur! Aliquam aut, velit excepturi quas
+              debitis optio libero rerum?
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section>
+      <section class="package-header" id="action">
+        <h1>Penutup</h1>
+      </section>
+      <p class="center">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, unde. Molestias incidunt quo modi alias. Consectetur molestias itaque in sed modi aspernatur ea explicabo. Itaque?
+      </p>
+      <button type="button" class="primary-button center">Call to Action</button>
+
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>

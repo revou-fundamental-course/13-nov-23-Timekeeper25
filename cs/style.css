@@ -1,0 +1,302 @@
+body {
+margin: 0;
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+display: flex;
+flex-direction: column;
+}
+
+.primary-button {
+  height: 20px;
+  max-width: 100%;
+  color: white;
+  background-color: black;
+}
+
+.center {
+  display: flex;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.testimony {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimony h2 {
+  font-style: italic;
+}
+
+.testimony-account {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-profile {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  gap: 0;
+}
+
+.profile-img {
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: cover;
+}
+
+.our-package {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.package-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: gray;
+  color: white;
+  width: 100%;
+  font-size: 30px;
+  padding: 50px 0;
+}
+
+.location-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.location::before {
+  display: flex;
+  align-items: center;
+  content: counter(item);
+  width: 30px; /* Adjust as needed for circle size */
+  height: 30px; /* Adjust as needed for circle size */
+  background-color: #007bff; /* Adjust as needed for circle color */
+  color: #fff; /* Adjust as needed for text color */
+  border-radius: 50%;
+}
+
+.location {
+  counter-increment: item;
+  flex-basis: 33.3%;
+  display: flex;
+  flex-direction: row;
+}
+
+.location p {
+  margin-right: 5px;
+}
+
+.circular-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.circular-list-item {
+  counter-increment: item;
+  display: flex;
+  align-items: center;
+  padding-left: 30px; /* Adjust as needed for spacing */
+  margin-bottom: 10px; /* Adjust as needed for spacing */
+}
+
+.circular-list-item::before {
+  content: counter(item);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Adjust as needed for circle size */
+  height: 50px; /* Adjust as needed for circle size */
+  background-color: #007bff; /* Adjust as needed for circle color */
+  color: #fff; /* Adjust as needed for text color */
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+}
+
+.circular-list-item-text {
+  margin-left: 10px; /* Adjust as needed for spacing between circle and text */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 30%; /* Adjust as needed */
+  margin: 10px;
+  padding: 20px;
+
+}
+
+.center {
+  text-align: center;
+}
+
+h3 {
+  display: inline;
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 0;
+}
+
+.header-wrapper {
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 2px solid black;
+padding: 16px 24px;
+}
+
+.header-wrapper > .menu {
+display: flex;
+}
+
+.header-wrapper > .menu > button {
+background-color: white;
+padding: 8px 16px;
+border: 1px solid gray;
+cursor: pointer;
+transition: 0.3s background-color ease-out;
+}
+
+.header-wrapper > .menu > button:hover {
+background-color: gainsboro;
+}
+
+.header-wrapper > .menu > button:first-child {
+border-radius: 4px 0 0 4px;
+}
+
+.header-wrapper > .menu > button:last-child {
+border-radius: 0 4px 4px 0;
+}
+
+.header-wrapper > .logo {
+width: auto;
+height: 40px;
+}
+
+.main-content {
+display: flex;
+justify-content: space-between;
+align-items: start;
+}
+
+.main-content .left-column,
+.main-content .right-column {
+width: 48%; /* Adjust as needed */
+}
+
+.main-content .form-section,
+.main-content .form-output {
+width: 100%;
+}
+
+.img-slideshow {
+width: 100%;
+}
+
+.img-slideshow-container {
+    flex: 1;
+    margin-right: 16px;
+    max-width: 50%;
+    margin-left: 50px;
+}
+
+.form-section {
+    flex: 1;
+}
+
+.form-container {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+
+
+@media only screen and (max-width: 600px) {
+.header-wrapper {
+    flex-direction: column;
+}
+
+.menu {
+    width: 100%;
+    flex-direction: column;
+}
+
+.logo {
+    margin-bottom: 14px;
+}
+
+.main-content {
+    flex-direction: column;
+}
+
+.main-content .left-column,
+.main-content .right-column {
+    width: 100%;
+}
+}
